@@ -1,0 +1,526 @@
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+a {
+    text-decoration: none;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.main {
+
+
+}
+.container_max {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0px;
+    margin: 0px auto;
+}
+/**
+ * 头部导航条
+ */
+.main_top_back {
+    width: 100%;
+    background-color: #44b549;
+}
+
+.main_header {
+    height: 60px;
+    width: 100%;
+    background-color: #44b549;
+    margin: 0px auto;
+}
+
+
+.navbar--extended {
+    background-color: #0000;
+}
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    transition: .7s;
+}
+.navbar_active {
+    background-color: #44b549;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+.navbar--extended .navbar__inner {
+    height: 60px;
+    color: #fff;
+}
+.navbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    color: #fff;
+    transition: .7s;
+}
+.navbar__logo {
+    color: white;
+    padding-left: 50px;
+    text-decoration: none;
+    background-image: url('/assets/img/qunheying/images/logo/128x75.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar_items {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar_item {
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/**
+ * 背景图区
+ */
+.hero {
+    background-image: url('/assets/img/qunheying/images/home/in-walls.jpg')!important;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 11px #7c92a980;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.hero__overlay--gradient {
+    background: linear-gradient(to right,#44b549,#44b549);
+}
+.hero__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    z-index: 1;
+}
+
+
+.hero__inner {
+    position: relative;
+    z-index: 3;
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 50px);
+    overflow: auto;
+}
+.hero__content__inner {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+.hero__title {
+    color: inherit;
+    margin-bottom: 1.25em;
+}
+.hero__text {
+    color: white;
+}
+/**
+ * 下载
+ */
+.down_items {
+    display: flex;
+    justify-content: center;
+}
+.install-btn {
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    height: 54px;
+    width: 190px;
+    line-height: 54px;
+    padding: 0 24px;
+    border: none;
+    background: #FFA922;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    margin: 50px 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: 0px 8px 12px 0px rgba(131, 96, 39, 0.16);
+}
+.down_item_version {
+    font-size: 12px;
+}
+/**
+ * 使用区
+ */
+.main_use {
+    width: 100%;
+    background-color: white;
+}
+.main_use_carousel {
+    width: 100%;
+    max-width: 950px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+    margin: 30px auto 50px auto;
+    max-height: 480px;
+    height: 100%;
+}
+.main_use_img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.main_use_carousel .el-carousel__container {
+    height: 480px;
+}
+
+.main_show {
+    background-color: #f7f7f7;
+    min-height: 300px;
+}
+.main_show_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 990px;
+    padding: 30px 0px;
+}
+.main_show_item {
+    max-width: 200px;
+    margin: 10px 20px;
+}
+.main_show_img {
+    width: 100%;
+}
+
+
+.main_contact {
+    width: 100%;
+    padding: 50px 0px 40px 0px ;
+    background-color: #44b549;
+}
+.main_contact_title{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+/**
+ * 安装帮助
+ */
+.main_install {
+    background-color: white;
+    min-height: 300px;
+    color: #707a7d;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+.main_install_btn {
+    user-select: none;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #20c05c;
+    display: block;
+    margin: 30px auto 15px auto;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease 0s, background 0.3s ease 0s;
+}
+.main_install_items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main_install_item {
+    width: 280px;
+    text-align: left;
+    line-height: 1.8;
+    margin: 0px 15px;
+}
+.main_install_item img {
+    width: 100%;
+    display: block;
+    margin: 20px 0px;
+}
+.main_install_item_title {
+    color: black;
+    font-size: 16px;
+}
+.active {
+    color: #20c05c;
+}
+.main_install_wx {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.main_video {
+    background-color: white;
+    padding: 40px 30px;
+}
+.main_video_top {
+    color: #222222;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.main_ask {
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+.main_ask_top {
+    color: #222222;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+.main_video_desc {
+    margin-top: 8px;
+    color: #222222;
+}
+.main_ask_item {
+    text-align: left;
+    margin: 12px 0px;
+}
+.main_ask_title {
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.main_ask_con {
+    line-height: 28px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.main_like {
+    margin-bottom: 50px;
+}
+.main_like_btn {
+    user-select: none;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #E64340;
+    display: block;
+    margin: 30px auto 15px auto;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.main_like_qrcode {
+}
+.main_like_qrcode_img {
+    width: 200px;
+}
+
+.main_more {
+    background-color: #f7f7f7;
+    padding: 36px;
+}
+
+/**
+ * main vip
+ */
+.main_vip {
+    background-color: #f7f7f7;
+    padding: 40px 50px 60px;
+}
+.container_max_vip {
+    max-width: 960px;
+}
+.main_vip_desc {
+    margin: 30px auto;
+}
+.main_vip_table {
+    box-shadow: 0px 6px 26px 0px rgba(42, 42, 42, 0.16);
+}
+
+.vip-fuc-ul {
+    padding-left: 10px;
+}
+.vip-fuc-li {
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: black;
+}
+.vip-fuc-li s {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #91DAA2;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main_vip_head_item {
+    height: 45px;
+    line-height: 45px;
+    background-color: #44b549;
+    color: white;
+    font-weight: bold;
+}
+.main_vip_head_item_gray {
+    background-color: #cecece;
+}
+.main_vip_head_item_golden {
+    background-color: #FFA922;
+}
+.main_vip_row {
+    display: flex;
+}
+.main_vip_list_item {
+    min-height: 45px;
+    line-height: 45px;
+    background-color: white;
+    font-size: 14px;
+}
+.main_vip_list_item_gray {
+    background-color: #F9F9F9;
+}
+.main_vip_list_icon_free {
+    color: #cecece;
+    font-size: 18px;
+}
+.main_vip_list_icon_vip {
+    color: #FFA922;
+    font-size: 18px;
+}
+/** footer **/
+.footer__inner {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__textLogo {
+    font-size: 18px;
+    flex-shrink: 0;
+    display: block;
+    cursor: pointer;
+    color: #44b549;
+    padding-left: 50px;
+    text-decoration: none;
+    background-image: url('/assets/img/qunheying/images/logo/128x75_green.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+.footer--dark .footer__textLogo {
+    color: #fff;
+}
+.footer__data {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-top: .25rem;
+    font-size: .9rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.footer__data__item {
+    padding-bottom: .5rem;
+    display: inline-block;
+    margin-bottom: 8pt;
+}
+.footer__row {
+    margin-bottom: 8pt;
+}
+.footer__row a {
+    color: #353535;
+    opacity: 0.62;
+    font-size: 15px;
+    line-height: 21px;
+    white-space: nowrap;
+}
+.footer_qrcode {
+    width: 120px;
+    height: 120px;
+}
+@media (max-width: 992px) {
+    .navbar__inner {
+        padding: 0px 12px;
+    }
+    .navbar__menu {
+        display: none;
+    }
+    .install-btn {
+        padding: 0px 4px;
+        font-size: 14px;
+    }
+    .main_use_carousel {
+        width: 100%;
+        height: auto;
+    }
+    .main_install_items {
+        flex-wrap: wrap;
+    }
+
+    .main_show_item {
+        width: 35%;
+    }
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+    .footer__textLogo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer__data {
+        display: block;
+
+    }
+    .footer__data__item {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .main_use_carousel .el-carousel__container {
+        height: 350px;
+    }
+}
+@media (max-width: 320px) {
+    .main_use_carousel .el-carousel__container {
+        height: 250px;
+    }
+}
+
+/** zsxq **/
+.main_top_back {
+
+}
+.hero_zsxq {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 11px #7c92a980;
+    background-image: url("/assets/img/zhishixingqiu/zsxq_banner.jpg") !important;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
